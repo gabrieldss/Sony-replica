@@ -1,0 +1,341 @@
+/* Padrão - TELA CHEIA */
+body {
+    overflow-x:hidden;
+}
+
+.marca {
+	z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    left: 115px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.barra {
+    height: 65px;
+    width: 105%;
+    margin: -10px;
+    background-color: black;
+    flex-direction: column;
+}
+
+.loj {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    right: 420px;
+    bottom: 24px;
+    color:#e4e7eb;
+    height: 42px;
+    width: 30px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+
+.elet {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    right: 345px;
+    bottom: 66px;
+    color:#e4e7eb;
+    height: 42px;
+    width: 80px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+.elet img {
+    position: relative;
+    left: 72px;
+    bottom: 20px;
+}
+
+.play {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    right: 245px;
+    bottom: 107px;
+    color:#e4e7eb;
+    height: 41px;
+    width: 75px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+
+.entret {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    right: 135px;
+    bottom: 148px;
+    color:#e4e7eb;
+    height: 41px;
+    width: 110px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+.entret img {
+    position: relative;
+    left: 98px;
+    bottom: 20px;
+}
+
+.pesquisa {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    left: 1054px;
+    bottom: 340px;
+    color:white;
+    font-family: 'Dosis', sans-serif; 
+    border: solid 1px transparent;
+    padding: 7px 10px 10px 13px;
+    background-color: #504d56;
+    cursor: pointer;
+    background-image: url("./imagens/sony6.jpg");
+    background-position: 100px;
+    background-repeat: no-repeat;
+}
+/* WebKit browsers (muda cor do texto do placeholder) */
+::-webkit-input-placeholder { 
+  color:#e4e7eb;
+}
+
+.sites {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    left: 537px;
+    bottom: 376px;
+    color:#e4e7eb;
+    font-family: 'Dosis', sans-serif; 
+    padding: 10px 10px 21px 8px;
+    background-color: #2f353d;
+    height: 5px;
+    width: 70px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.sites img {
+    position: relative;
+    left: 5px;
+    top: 6px;
+}
+
+.sup {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    right: 23px;
+    bottom: 188px;
+    background-color: black;
+    color:#e4e7eb;
+    height: 40px;
+    width: 70px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+.sup img {
+    position: relative;
+    left: 5px;
+}
+
+.login {
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    left: 245px;
+    bottom: 235px;
+    color:#e4e7eb;
+    height: 20px;
+    width: 50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px; 
+}
+.login img {
+    position: relative;
+    left: 2px;
+}
+
+.icone1 img {
+    z-index: 1;
+    position: relative;
+    left: 978px;
+    bottom: 267px;
+    cursor: pointer;
+}
+
+.icone2 img {
+    z-index: 1;
+    position: relative;
+    left: 1012px;
+    bottom: 301px;
+    cursor: pointer;
+}
+
+.tv img {
+    margin-top: 10px;
+    margin-left: -10px;
+    width: 105%;
+}
+
+.maior {
+    background-color: transparent;
+    color:white;
+    position: relative;
+    bottom:420px;
+    left: 150px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 35px;
+}
+
+.menor {
+    background-color: transparent;
+    color:white;
+    position: relative;
+    bottom:400px;
+    left: 150px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.btn {
+    position: relative;
+    bottom:430px;
+    left: 150px;
+    color:white;
+    background: #5865f5;
+    border: solid 1px #5865f5;
+    padding: 12px 22px 12px 22px;
+    cursor: pointer;
+}
+
+/* TELA MÉDIA */
+@media screen and (max-width: 1335px) {
+    body {
+    background-image: url("./imagens/sony3.jpg");
+    background-repeat: no-repeat;
+    height:700px;
+    background-position: center;
+    position: relative;
+    }
+.tv img,.loj,.elet.play,.entret,.sup,.login,.icone1, .pesquisa,.sites {
+    display: none;
+    }
+.marca {
+    position: relative;
+    width: 50%;
+    top: 12px;
+    }
+.maior {
+    position: relative;
+    top:180px;
+    left: 100px;
+    }
+.menor {
+    position: relative;
+    top:200px;
+    left: 100px;
+    }
+.btn {
+    position: relative;
+    top:170px;
+    left: 100px;
+    }
+}
+
+/* TELA PEQUENA */
+@media screen and (max-width: 750px) {
+body {
+    background-image: url("./imagens/sony3.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+    position: relative;
+    }
+.tv img,.loj,.elet,.play,.entret,.sup,.login,.icone1,.pesquisa,.sites,br {
+    display: none;
+}
+.barra {
+    height: 50px;
+}
+.marca {
+    position: fixed;
+    left: 40%;
+    cursor: pointer;
+    top:8px;
+    }
+.marca img {
+    height: 30px;
+    }
+.maior {
+    color:#2f353d;;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    font-size: 25px;
+    top: 415px;
+    left: 10px;
+    }
+.menor {
+    color:#2f353d;;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    top: 435px;
+    left: 10px;
+    }
+.btn {
+    position: relative;
+    top: 420px;
+    left: 10px;
+    }
+}
+
+/* APARECER ÍCONE DO CARRINHO */
+@media screen and (max-width: 500px) {
+    .icone2 img {
+    position: fixed;
+    left: 430px;
+    top: 7px;
+    z-index: 1;
+    height: 35px;
+    }
+}
+
+/* EFEITOS */
+.icone1 img:hover, .icone2 img:hover {
+    opacity: 0.6;
+}
+
+.loj:hover,.elet:hover,.play:hover,.entret:hover,.sup:hover {
+    border-bottom:3px solid #5252ec;
+    color:white;
+}
+
+.login:hover {
+    background: #2f353d;
+    color:white;
+    z-index: 2;
+}
+
+.pesquisa:hover {
+    color:white;
+    background:#5252ec;
+}
+
+.sites:hover {
+    background: #504d56;
+    z-index: 2;
+}
+
+.btn:hover {
+    background: #3e59f2;
+}
+
+.btn:active {
+    background: #0f74cc;
+}
